@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Schedule Calendar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            margin-bottom: 30px;
+        }
+        .calendar-header {
+            font-weight: bold;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 5px;
+        }
+        .day {
+            border: 1px solid #ccc;
+            padding: 5px;
+            min-height: 100px;
+            position: relative;
+        }
+        .day-number {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-weight: bold;
+        }
+        .mother {
+            background-color: #ffcccb;
+        }
+        .father {
+            background-color: #add8e6;
+        }
+        .split-day {
+            background: linear-gradient(to bottom, #ffcccb 50%, #add8e6 50%);
+        }
+        .special-event {
+            background-color: #90EE90;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            margin: 5px 10px;
+            display: flex;
+            align-items: center;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .event-text {
+            font-size: 10px;
+            word-wrap: break-word;
+        }
+        .time-info {
+            font-size: 9px;
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Parenting Schedule Calendar</h1>
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color mother"></div>
+            <span>Mother</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color father"></div>
+            <span>Father</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color split-day"></div>
+            <span>Split Day</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color special-event"></div>
+            <span>Specia
